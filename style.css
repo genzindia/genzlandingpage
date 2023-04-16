@@ -6,18 +6,26 @@
   font-family: "Chewy", cursive;
 }
 
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.font-comic {
+  font-family: "Comic Neue", cursive;
+}
+
 .span-col-11 {
   grid-column: span 11/auto;
   align-self: center;
 }
 
 body {
-  margin: 30px 200px 0px 200px;
+  margin: 0px;
 }
 
 header {
+  margin: 30px 200px 140px 200px;
   height: 100px;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
@@ -44,11 +52,46 @@ header .links ul li a:hover {
   color: #eb455f;
 }
 
+.enroll-btn {
+  color: #fcffe7;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 20px 60px;
+  background-color: #eb455f;
+  box-shadow: -10px 10px #bad7e9;
+  transition: all 0.5s ease;
+}
+.enroll-btn:hover {
+  box-shadow: none;
+  background-color: #2b3467;
+}
+
+.jumbotron {
+  height: 800px;
+  background-image: url(./assets/webbigbg1.png);
+  background-repeat: no-repeat;
+  padding-left: 200px;
+  background-position: right;
+  background-size: contain;
+}
+.jumbotron #mobilebg {
+  display: none;
+}
+.jumbotron h1 {
+  font-size: 79px;
+  margin-top: 0px;
+  color: #2b3467;
+  font-weight: 100;
+}
+.jumbotron p {
+  width: 600px;
+  font-size: 35px;
+  margin-bottom: 70px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-  body {
-    margin: 30px 50px 0px 50px;
-  }
   header {
+    margin: 30px 50px 100px 50px;
     height: 65px;
   }
   header .logo {
@@ -60,12 +103,23 @@ header .links ul li a:hover {
   header .links ul li a {
     font-size: 20px;
   }
+  .jumbotron {
+    height: 480px;
+    background-image: url(./assets/tabletbg1.png);
+    padding-left: 50px;
+  }
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+  .jumbotron p {
+    width: 400px;
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
 }
 @media screen and (max-width: 767px) {
-  body {
-    margin: 50px 10px 0px 10px;
-  }
   header {
+    margin: 50px 10px 50px 10px;
     height: 50px;
   }
   header .logo {
@@ -76,5 +130,33 @@ header .links ul li a:hover {
   }
   header .links ul li a {
     font-size: 15px;
+  }
+  .jumbotron {
+    height: auto;
+    background-image: none;
+    padding: 0px;
+    margin: 0px 10px;
+  }
+  .jumbotron h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .jumbotron p {
+    text-align: center;
+    width: auto;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .jumbotron .btn-container {
+    text-align: center;
+  }
+  .jumbotron #mobilebg {
+    display: block;
+    width: auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .jumbotron #mobilebg img {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
