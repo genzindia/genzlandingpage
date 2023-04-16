@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+.font-chewy {
+  font-family: "Chewy", cursive;
+}
+
+.span-col-11 {
+  grid-column: span 11/auto;
+  align-self: center;
+}
+
+body {
+  margin: 30px 200px 0px 200px;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+header .logo {
+  width: auto;
+  height: 100px;
+}
+header .links ul {
+  list-style: none;
+  text-align: right;
+  margin: 0px;
+}
+header .links ul li {
+  display: inline;
+  margin-left: 60px;
+}
+header .links ul li a {
+  text-decoration: none;
+  color: #2b3467;
+  font-size: 30px;
+}
+header .links ul li a:hover {
+  color: #eb455f;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  body {
+    margin: 30px 50px 0px 50px;
+  }
+  header {
+    height: 65px;
+  }
+  header .logo {
+    height: 50px;
+  }
+  header .links ul li {
+    margin-left: 25px;
+  }
+  header .links ul li a {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    margin: 50px 10px 0px 10px;
+  }
+  header {
+    height: 50px;
+  }
+  header .logo {
+    height: 50px;
+  }
+  header .links ul li {
+    margin-left: 20px;
+  }
+  header .links ul li a {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
