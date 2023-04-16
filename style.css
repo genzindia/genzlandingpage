@@ -113,6 +113,44 @@ header .links ul li a:hover {
   background-size: contain;
 }
 
+#activities {
+  margin: 200px;
+}
+#activities h1 {
+  text-align: center;
+  font-size: 90px;
+  font-weight: 100;
+  color: #2b3467;
+}
+#activities .activity-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+#activities .activity-container .activity-card {
+  width: 250px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  border: 3px solid #bad7e9;
+  border-radius: 5px;
+}
+#activities .activity-container .activity-card img {
+  width: 150px;
+  height: 150px;
+}
+#activities .activity-container .activity-card h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin: 0px;
+}
+#activities .activity-container .activity-card p {
+  font-size: 13px;
+  margin: 0px;
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
   #aboutus .bg2-container {
     background-image: url("./assets/websmallbg2.png");
@@ -157,6 +195,12 @@ header .links ul li a:hover {
   #aboutus .bg2-container {
     background-image: url("./assets/tabletbg2.png");
     height: 400px;
+  }
+  #activities {
+    margin: 50px;
+  }
+  #activities h1 {
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -212,5 +256,11 @@ header .links ul li a:hover {
   #aboutus .bg2-container {
     background-image: url("./assets/mobilebg2.png");
     height: 200px;
+  }
+  #activities {
+    margin: 10px;
+  }
+  #activities h1 {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
