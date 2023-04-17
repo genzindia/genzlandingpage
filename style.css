@@ -197,6 +197,7 @@ header .links ul li a:hover {
 
 footer {
   height: 50px;
+  margin-top: 30px;
   background-color: #2b3467;
   display: flex;
   justify-content: center;
