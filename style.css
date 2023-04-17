@@ -151,6 +151,65 @@ header .links ul li a:hover {
   margin: 0px;
 }
 
+#contactus h1 {
+  font-size: 90px;
+  text-align: center;
+  font-weight: 100;
+  color: #2b3467;
+}
+#contactus .address-holder {
+  text-align: center;
+}
+#contactus .address-holder .map-link img {
+  width: 500px;
+  border-radius: 5px;
+  border: 5px solid #bad7e9;
+}
+#contactus .address-holder .social-links-container {
+  width: 500px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#contactus .address-holder .social-links-container img {
+  width: 50px;
+}
+#contactus .address-holder .details p {
+  width: 500px;
+  margin: 0px auto 20px auto;
+  text-align: center;
+}
+#contactus .address-holder .details div {
+  display: flex;
+  width: 500px;
+  margin: auto;
+  justify-content: space-between;
+}
+#contactus .address-holder .details a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #2b3467;
+  font-weight: bold;
+}
+#contactus .address-holder .details a:hover {
+  color: #eb455f;
+}
+
+footer {
+  height: 50px;
+  background-color: #2b3467;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #bad7e9;
+}
+
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
   #aboutus .bg2-container {
     background-image: url("./assets/websmallbg2.png");
@@ -262,5 +321,48 @@ header .links ul li a:hover {
   }
   #activities h1 {
     font-size: 30px;
+  }
+  #contactus h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 100;
+    color: #2b3467;
+  }
+  #contactus .address-holder {
+    text-align: center;
+  }
+  #contactus .address-holder .map-link img {
+    width: 250px;
+    border-radius: 5px;
+    border: 5px solid #bad7e9;
+  }
+  #contactus .address-holder .social-links-container {
+    width: 250px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  #contactus .address-holder .social-links-container img {
+    width: 50px;
+  }
+  #contactus .address-holder .details p {
+    width: 250px;
+    margin: 0px auto 20px auto;
+    text-align: center;
+  }
+  #contactus .address-holder .details div {
+    display: flex;
+    width: 250px;
+    margin: auto;
+    justify-content: space-between;
+  }
+  #contactus .address-holder .details a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #2b3467;
+    font-weight: bold;
+  }
+  #contactus .address-holder .details a:hover {
+    color: #eb455f;
   }
 }/*# sourceMappingURL=style.css.map */
