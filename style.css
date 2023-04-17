@@ -329,12 +329,12 @@ footer a:hover {
     text-align: center;
   }
   #contactus .address-holder .map-link img {
-    width: 250px;
+    width: 300px;
     border-radius: 5px;
     border: 5px solid #bad7e9;
   }
   #contactus .address-holder .social-links-container {
-    width: 250px;
+    width: 300px;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
@@ -343,13 +343,13 @@ footer a:hover {
     width: 50px;
   }
   #contactus .address-holder .details p {
-    width: 250px;
+    width: 300px;
     margin: 0px auto 20px auto;
     text-align: center;
   }
   #contactus .address-holder .details div {
     display: flex;
-    width: 250px;
+    width: 300px;
     margin: auto;
     justify-content: space-between;
   }
