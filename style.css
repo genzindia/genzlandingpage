@@ -19,6 +19,15 @@
   align-self: center;
 }
 
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+.whatsapp-btn img {
+  width: 50px;
+}
+
 body {
   margin: 0px;
 }
@@ -176,7 +185,7 @@ header .links ul li a:hover {
   width: 500px;
   margin: 20px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 #contactus .address-holder .social-links-container img {
   width: 50px;
@@ -336,8 +345,6 @@ footer a:hover {
   #contactus .address-holder .social-links-container {
     width: 300px;
     margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
   }
   #contactus .address-holder .social-links-container img {
     width: 50px;
@@ -345,7 +352,6 @@ footer a:hover {
   #contactus .address-holder .details p {
     width: 300px;
     margin: 0px auto 20px auto;
-    text-align: center;
   }
   #contactus .address-holder .details div {
     display: flex;

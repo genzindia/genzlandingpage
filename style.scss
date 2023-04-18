@@ -28,6 +28,16 @@ $beige: #fcffe7;
     align-self: center;
 }
 
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+    img {
+        width: 50px;
+    }
+}
+
 body {
     margin: 0px;
 }
@@ -119,11 +129,11 @@ header {
         color: $blue;
     }
 
-    .content{
+    .content {
         text-align: center;
         margin: auto;
 
-        img{
+        img {
             width: 700px;
             border-radius: 10px;
             box-shadow: 0px 4px 6px grey;
@@ -136,7 +146,7 @@ header {
         font-size: 20px;
     }
 
-    .subtitle{
+    .subtitle {
         margin-top: 30px;
         font-style: italic;
         font-weight: 600;
@@ -175,7 +185,7 @@ header {
                 font-size: 25px;
                 font-weight: 100;
                 margin: 0px;
-                color: $blue
+                color: $blue;
             }
             p {
                 font-size: 13px;
@@ -208,7 +218,7 @@ header {
             margin: 20px auto;
 
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
 
             img {
                 width: 50px;
@@ -263,7 +273,6 @@ footer {
 
 //Web small
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
-    
 }
 
 //tablet
@@ -386,8 +395,8 @@ footer {
             font-size: 30px;
         }
 
-        .content{
-            img{
+        .content {
+            img {
                 width: 250px;
             }
         }
@@ -428,9 +437,6 @@ footer {
                 width: 300px;
                 margin: 20px auto;
 
-                display: flex;
-                justify-content: space-between;
-
                 img {
                     width: 50px;
                 }
@@ -440,7 +446,6 @@ footer {
                 p {
                     width: 300px;
                     margin: 0px auto 20px auto;
-                    text-align: center;
                 }
 
                 div {
