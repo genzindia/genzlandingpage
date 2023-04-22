@@ -33,7 +33,7 @@ body {
 }
 
 header {
-  margin: 30px 200px 140px 200px;
+  margin: 30px 200px 40px 200px;
   height: 100px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -77,11 +77,12 @@ header .links ul li a:hover {
 
 .jumbotron {
   height: 800px;
-  background-image: url(./assets/webbigbg1.png);
+  background-image: url(./assets/jumbotron.svg);
   background-repeat: no-repeat;
   padding-left: 200px;
-  background-position: right;
-  background-size: contain;
+  padding-top: 100px;
+  background-position: 90%;
+  background-size: 40%;
 }
 .jumbotron #mobilebg {
   display: none;
@@ -227,6 +228,11 @@ footer a:hover {
   color: #bad7e9;
 }
 
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .jumbotron {
+    background-position: 98%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   header {
     margin: 30px 50px 100px 50px;
@@ -243,7 +249,7 @@ footer a:hover {
   }
   .jumbotron {
     height: 480px;
-    background-image: url(./assets/tabletbg1.png);
+    background-image: url(./assets/jumbotron.svg);
     padding-left: 50px;
   }
   .jumbotron h1 {
@@ -301,6 +307,7 @@ footer a:hover {
   }
   .jumbotron .btn-container {
     text-align: center;
+    margin-bottom: 50px;
   }
   .jumbotron #mobilebg {
     display: block;
@@ -309,7 +316,7 @@ footer a:hover {
     text-align: center;
   }
   .jumbotron #mobilebg img {
-    width: 90%;
+    width: 80%;
   }
   #aboutus h1 {
     margin: 0px 10px 20px 10px;
