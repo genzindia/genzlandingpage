@@ -43,7 +43,7 @@ body {
 }
 
 header {
-    margin: 30px 200px 140px 200px;
+    margin: 30px 200px 40px 200px;
     height: 100px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -95,11 +95,12 @@ header {
 
 .jumbotron {
     height: 800px;
-    background-image: url(./assets/webbigbg1.png);
+    background-image: url(./assets/jumbotron.svg);
     background-repeat: no-repeat;
     padding-left: 200px;
-    background-position: right;
-    background-size: contain;
+    padding-top: 100px;
+    background-position: 90%;
+    background-size: 40%;
 
     #mobilebg {
         display: none;
@@ -273,6 +274,9 @@ footer {
 
 //Web small
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
+    .jumbotron {
+        background-position: 98%;
+    }
 }
 
 //tablet
@@ -299,7 +303,7 @@ footer {
 
     .jumbotron {
         height: 480px;
-        background-image: url(./assets/tabletbg1.png);
+        background-image: url(./assets/jumbotron.svg);
         padding-left: 50px;
 
         h1 {
@@ -376,6 +380,7 @@ footer {
 
         .btn-container {
             text-align: center;
+            margin-bottom: 50px;
         }
 
         #mobilebg {
@@ -384,7 +389,7 @@ footer {
             margin-top: 30px;
             text-align: center;
             img {
-                width: 90%;
+                width: 80%;
             }
         }
     }
