@@ -109,19 +109,25 @@ header .links ul li a:hover {
   font-weight: 100;
   color: #2b3467;
 }
-#aboutus .content {
-  text-align: center;
-  margin: auto;
-}
-#aboutus .content img {
-  width: 700px;
+#aboutus img {
+  width: 500px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px grey;
 }
+#aboutus .content-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  margin: 0px 200px 0px 200px;
+}
+#aboutus .content {
+  text-align: left;
+}
 #aboutus p {
-  margin: 0px 400px 20px 400px;
-  text-align: center;
-  font-size: 20px;
+  text-align: left;
+  font-size: 23px;
 }
 #aboutus .subtitle {
   margin-top: 30px;
@@ -228,12 +234,12 @@ footer a:hover {
   color: #bad7e9;
 }
 
-@media screen and (min-width: 1280px) and (max-width: 1919px) {
+@media screen and (min-width: 1367px) and (max-width: 1919px) {
   .jumbotron {
     background-position: 98%;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1366px) {
   header {
     margin: 30px 50px 100px 50px;
     height: 65px;
@@ -264,9 +270,22 @@ footer a:hover {
     margin: 0px 50px 20px 50px;
     font-size: 50px;
   }
+  #aboutus .content-container {
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    margin: 0px 50px 0px 50px;
+  }
+  #aboutus .content {
+    text-align: left;
+  }
   #aboutus p {
-    margin: 0px 50px 20px 50px;
+    text-align: left;
     font-size: 20px;
+  }
+  #aboutus .subtitle {
+    margin-top: 30px;
+    font-style: italic;
+    font-weight: 600;
   }
   #activities {
     margin: 50px;
@@ -275,7 +294,30 @@ footer a:hover {
     font-size: 50px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 950px) {
+  #aboutus .content-container {
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    margin: 0px 50px 0px 50px;
+  }
+  #aboutus .content-container img {
+    width: 300px;
+  }
+  #aboutus .content-container .image-container {
+    align-self: center;
+  }
+  #aboutus .content {
+    text-align: left;
+  }
+  #aboutus .content .subtitle {
+    margin-top: 0px;
+  }
+  #aboutus p {
+    text-align: left;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 766px) {
   header {
     margin: 50px 10px 50px 10px;
     height: 50px;
@@ -322,11 +364,23 @@ footer a:hover {
     margin: 0px 10px 20px 10px;
     font-size: 30px;
   }
-  #aboutus .content img {
+  #aboutus .content-container {
+    display: block;
+    margin: 30px 10px 30px 10px;
+    text-align: center;
+  }
+  #aboutus .content-container img {
     width: 250px;
+  }
+  #aboutus .content {
+    text-align: center;
+  }
+  #aboutus .content .subtitle {
+    margin-top: 20px;
   }
   #aboutus p {
     margin: 0px 10px 20px 10px;
+    text-align: center;
     font-size: 13px;
   }
   #activities {
